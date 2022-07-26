@@ -1,0 +1,106 @@
+{
+	"pages": [
+		"projects/ZS1/pages/default/index/default_index",
+		"projects/ZS1/pages/about/index/about_index",
+		"projects/ZS1/pages/search/search",
+		"projects/ZS1/pages/my/index/my_index",
+		"projects/ZS1/pages/my/reg/my_reg",
+		"projects/ZS1/pages/my/edit/my_edit",
+		"projects/ZS1/pages/my/foot/my_foot",
+		"projects/ZS1/pages/my/fav/my_fav",
+		"projects/ZS1/pages/news/index/news_index",
+		"projects/ZS1/pages/news/detail/news_detail",
+		"projects/ZS1/pages/news/cate1/news_cate1",
+		"projects/ZS1/pages/admin/news/list/admin_news_list",
+		"projects/ZS1/pages/admin/news/add/admin_news_add",
+		"projects/ZS1/pages/admin/news/edit/admin_news_edit",
+		"projects/ZS1/pages/admin/setup/about/admin_setup_about",
+		"projects/ZS1/pages/admin/setup/qr/admin_setup_qr",
+		"projects/ZS1/pages/admin/index/home/admin_home",
+		"projects/ZS1/pages/admin/index/login/admin_login",
+		"projects/ZS1/pages/admin/content/admin_content",
+		"projects/ZS1/pages/admin/mgr/log/admin_log_list",
+		"projects/ZS1/pages/admin/mgr/edit/admin_mgr_edit",
+		"projects/ZS1/pages/admin/mgr/list/admin_mgr_list",
+		"projects/ZS1/pages/admin/mgr/add/admin_mgr_add",
+		"projects/ZS1/pages/admin/mgr/pwd/admin_mgr_pwd",
+		"projects/ZS1/pages/admin/user/list/admin_user_list",
+		"projects/ZS1/pages/admin/user/detail/admin_user_detail",
+		"projects/ZS1/pages/admin/user/export/admin_user_export",
+		"projects/ZS1/pages/enroll/index/enroll_index",
+		"projects/ZS1/pages/enroll/join/enroll_join",
+		"projects/ZS1/pages/enroll/detail/enroll_detail",
+		"projects/ZS1/pages/enroll/my_join_list/enroll_my_join_list",
+		"projects/ZS1/pages/enroll/my_join_detail/enroll_my_join_detail",
+		"projects/ZS1/pages/enroll/join_edit/enroll_join_edit",
+		"projects/ZS1/pages/admin/enroll/list/admin_enroll_list",
+		"projects/ZS1/pages/admin/enroll/add/admin_enroll_add",
+		"projects/ZS1/pages/admin/enroll/edit/admin_enroll_edit",
+		"projects/ZS1/pages/admin/enroll/join_list/admin_enroll_join_list",
+		"projects/ZS1/pages/admin/enroll/export/admin_enroll_export",
+		"projects/ZS1/pages/album/detail/album_detail",
+		"projects/ZS1/pages/album/index/album_index",
+		"projects/ZS1/pages/admin/album/list/admin_album_list",
+		"projects/ZS1/pages/admin/album/add/admin_album_add",
+		"projects/ZS1/pages/admin/album/edit/admin_album_edit",
+		"cmpts/public/form/form_set/field/form_set_field",
+		"cmpts/public/form/form_show/content/form_show_content",
+		"pages/test1/test1"
+	],
+	"window": {
+		"backgroundColor": "#f1f1f1",
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#2662D1",
+		"navigationBarTitleText": "职业学校报名小程序",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"custom": false,
+		"backgroundColor": "#FFFFFF",
+		"color": "#999999",
+		"selectedColor": "#2662D1",
+		"list": [
+			{
+				"pagePath": "projects/ZS1/pages/default/index/default_index",
+				"text": "首页",
+				"iconPath": "/projects/ZS1/images/tabbar/home.png",
+				"selectedIconPath": "/projects/ZS1/images/tabbar/home_cur.png"
+			},
+			{
+				"pagePath": "projects/ZS1/pages/news/cate1/news_cate1",
+				"text": "招生指南",
+				"iconPath": "/projects/ZS1/images/tabbar/news.png",
+				"selectedIconPath": "/projects/ZS1/images/tabbar/news_cur.png"
+			},
+			{
+				"pagePath": "projects/ZS1/pages/enroll/index/enroll_index",
+				"text": "报名",
+				"iconPath": "/projects/ZS1/images/tabbar/enroll.png",
+				"selectedIconPath": "/projects/ZS1/images/tabbar/enroll_cur.png"
+			},
+			{
+				"pagePath": "projects/ZS1/pages/album/index/album_index",
+				"text": "多彩校园",
+				"iconPath": "/projects/ZS1/images/tabbar/album.png",
+				"selectedIconPath": "/projects/ZS1/images/tabbar/album_cur.png"
+			},
+			{
+				"pagePath": "projects/ZS1/pages/my/index/my_index",
+				"text": "我的",
+				"iconPath": "/projects/ZS1/images/tabbar/my.png",
+				"selectedIconPath": "/projects/ZS1/images/tabbar/my_cur.png"
+			}
+		]
+	}, 
+	"permission": {
+		"scope.userLocation": {
+			"desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+		}
+	},
+	"usingComponents": {
+		"cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+		"cmpt-picker": "/cmpts/public/picker/picker_cmpt",
+		"cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+	},
+	"sitemapLocation": "sitemap.json"
+}

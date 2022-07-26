@@ -1,0 +1,68 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l load-project"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l load-project"></view>
+
+<block wx:if="{{isLoad}}">
+	<cmpt-swiper mode="widthFix" indicatorActiveColor="#2662D1" height="350" images="{{enroll.ENROLL_OBJ.album}}" />
+	<view class="main-enroll-detail">
+		<view class="title">{{enroll.ENROLL_TITLE}}</view>
+
+		<view class="item">
+			<view class="item-title text-project"><text class="icon-titles" />招生标准 <text class="tag bg-project small radius margin-left text-white">{{enroll.ENROLL_OBJ.year}}</text></view>
+			<view class="line3">
+				<view class="line-item">
+					<text class="txt1">起点</text>
+					<text class="txt2 content-cut-one">{{enroll.ENROLL_OBJ.start}}</text>
+				</view>
+				<view class="line-item">
+					<text class="txt1">学历</text>
+					<text class="txt2 content-cut-one">{{enroll.ENROLL_OBJ.edu}}</text>
+				</view>
+				<view class="line-item">
+					<text class="txt1">招生人数</text>
+					<text wx:if="{{enroll.ENROLL_MAX_CNT}}" class="txt2 content-cut-one">{{enroll.ENROLL_MAX_CNT}}(人)</text>
+					<text wx:else class="txt2 content-cut-one">不限</text>
+				</view>
+			</view>
+			<view class="item-desc">学费：{{enroll.ENROLL_OBJ.fee}}</view>
+		</view>
+
+		<view class="item">
+			<view class="item-title text-project"><text class="icon-titles" />招生进度 </view>
+			<view class="line-process">
+				<view class="line-process-inner">
+					<view class="left">报名时间：</view>
+					<view class="right">{{enroll.start}} 至 {{enroll.end}}</view>
+				</view>
+				<view class="line-process-inner">
+					<view class="left">报名状态：</view>
+					<view class="right">{{enroll.statusDesc}}</view>
+				</view>
+			</view>
+
+		</view>
+
+		<view class="item">
+			<view class="item-title text-project"><text class="icon-titles" />专业特色</view>
+			<view class="item-desc">{{enroll.ENROLL_OBJ.major}}</view>
+		</view>
+
+		<view class="item">
+			<view class="item-title text-project"><text class="icon-titles" />主修课程</view>
+			<view class="item-desc">{{enroll.ENROLL_OBJ.lesson}}</view>
+		</view>
+
+		<view class="item">
+			<view class="item-title text-project"><text class="icon-titles" />升学与就业</view>
+			<view class="item-desc">{{enroll.ENROLL_OBJ.work}}</view>
+		</view>
+	</view>
+
+	<cmpt-detail mode="mode1" doSlot="{{true}}" topBtnShow="{{topBtnShow}}" tag="{{enroll.myEnrollJoinId?'已登记':''}}" oid="{{enroll._id}}" cate="{{enroll.ENROLL_CATE_NAME}}" title="{{enroll.ENROLL_TITLE}}" tag="{{enroll.myEnrollJoinId?'已报名':''}}" cover="{{enroll.ENROLL_OBJ.cover[0]}}" qr="{{enroll.ENROLL_QR}}" desc="查看详情" bg="{{skin.PROJECT_COLOR}}">
+		<view bindtap="bindJoinTap" wx:if="{{enroll.statusDesc=='进行中'&&!enroll.myEnrollJoinId}}" class="cmpt-biz-detail-mode1-join cur">点击报名</view>
+
+		<view bindtap="bindCancelJoinTap" wx:elif="{{enroll.myEnrollJoinId}}" class="cmpt-biz-detail-mode1-join">取消报名</view>
+
+		<view wx:else class="cmpt-biz-detail-mode1-join">{{enroll.statusDesc}}</view>
+	</cmpt-detail>
+
+</block>
