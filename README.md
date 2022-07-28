@@ -3,6 +3,7 @@
  - 这是一个以报名为核心的职业学校招生小程序，目的是方便想要系统学习技能，入门某项技能或者领域的初高中毕业生，了解该学校的基本情况及各个专业，并提供报名路径，致力于技能型人才培养。
 - 本程序前后端代码完整，主要功能包括专业介绍，专业选择，资料填报，查看审核结果，学校概况，招生指南，入学须知，就业升学，多彩校园等功能，后台可以创建报名项目，查看和导出名单Excel，审核报名记录等。
 - 本小程序采用腾讯提供的小程序云开发解决方案，无须服务器和域名。可以设定报名的起始时间，是否需要审核，是否可以修改和取消等多项规则
+
  ![image](https://user-images.githubusercontent.com/97859420/180925475-2c22380c-7da6-48a6-a8fd-678b4e1edd43.png)
 
 
@@ -19,13 +20,14 @@
 ## 作者
 - 如有疑问，欢迎骚扰联系我：开发交流，技术分享，问题答疑，功能建议收集，版本更新通知，安装部署协助，小程序开发定制等。
 - 俺的微信: 
- ![image](https://user-images.githubusercontent.com/97859420/180925480-6a59d286-fb31-4706-aa60-8bb4eee1c51d.png)
+ ![image](https://user-images.githubusercontent.com/97859420/180925490-a42bae1b-9f09-4960-a791-c251139ef2d2.png)
+
 
 
 
 
 ## 演示 
- ![image](https://user-images.githubusercontent.com/97859420/180925490-a42bae1b-9f09-4960-a791-c251139ef2d2.png)
+ ![image](https://user-images.githubusercontent.com/97859420/180925480-6a59d286-fb31-4706-aa60-8bb4eee1c51d.png)
 
  
 
