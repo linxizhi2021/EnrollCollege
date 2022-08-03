@@ -45,7 +45,7 @@ Component({
 			value: ''
 		},
 		tag: {
-			type: String, //小角标
+			type: String, // 小角标
 			value: ''
 		},
 		doFav: {
